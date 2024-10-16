@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(Algo)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(INCLUDE_DIR ./include)
+aux_source_directory(./src SRC)
+add_executable(Algo ${SRC})
+target_include_directories(Algo PUBLIC ${INCLUDE_DIR})
