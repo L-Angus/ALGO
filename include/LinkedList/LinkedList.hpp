@@ -1,13 +1,8 @@
 #ifndef LINKED_LIST_HPP
 #define LINKED_LIST_HPP
 
+#include "ListNode.h"
 #include <memory>
-
-template <typename T> struct LinkedNode {
-  LinkedNode(T val) : value(val), pNextNode(nullptr) {}
-  T value;
-  LinkedNode<T> *pNextNode;
-};
 
 template <typename T> class LinkedList {
 public:
